@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8449d07236ad8741bb84e8657f9fce0, type: 3}
+  m_Name: Zios.Console.Console
+  m_EditorClassIdentifier: 
+  skin: {fileID: 11400000, guid: abfe5ab11a13f5e4b8e1f01e6716e334, type: 2}
+  background: {fileID: 2100000, guid: 747ba6f61fef5714a89b8a56ed41f654, type: 2}
+  inputBackground: {fileID: 2100000, guid: fc4e786b04678cb488415f0d8fa2b62d, type: 2}
+  textArrow: {fileID: 2100000, guid: 20b6fb5e9b63f0645a924a0c929bd7f3, type: 2}
+  triggerKey: 293
+  speed: 5
+  height: 0.25
+  configFile: Game.cfg
+  logFile: Log.txt
+  logLineSize: 150
+  logFontSize: 15
+  logFontColor: 7
+  logFontAllowColors: 1

@@ -12,10 +12,8 @@ public static class TileTypeRegistry {
 
         Sprite treeSprite = Resources.Load<Sprite>("Sprites/Objects/mediumtree2");
         Bounds2D clippingZone = new Bounds2D(0, 1, 3, 3);
-        Bounds2D collisionZone = new Bounds2D(1, 0, 1, 1);
-        Bounds2D interactionZone = new Bounds2D(1, 0, 1, 1);
-        Bounds2D blockingZone = new Bounds2D(0, 0, 3, 2);
-        TileType tree = new TileType(treeSprite, clippingZone, collisionZone, interactionZone, blockingZone);
+        Bounds2D collisionZone = new Bounds2D(0, 0, 1, 1);
+        TileType tree = new TileType(treeSprite, clippingZone, collisionZone);
 
         tileTypeRegister.Add("core.tree", tree);
     }

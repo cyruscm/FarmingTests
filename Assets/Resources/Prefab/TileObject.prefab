@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4121470009638186}
   - component: {fileID: 212518727167332680}
-  - component: {fileID: 114726211556547604}
   - component: {fileID: 60893134280869842}
   m_Layer: 10
   m_Name: TileObject
@@ -28,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1915761429863660
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,17 +120,6 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths: []
---- !u!114 &114726211556547604
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130811398745566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9506b033447354d4ab1464ff1d0c405e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212518727167332680
 SpriteRenderer:
   m_ObjectHideFlags: 1

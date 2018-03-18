@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour {
 
-    public GameObject TileObjectPrefab;
+    SpriteController spriteController;
+    public GameObject tileObjectPrefab;
+    public Room currentRoom;
 
     // Use this for initialization
 	void Start () {
         TileTypeRegistry.BuildRegistry();
+        spriteController = new SpriteController(tileObjectPrefab);
+        Room room = new Room(40, 40);
+        this.currentRoom = room;
+        RenderRoom(room);
+	}
 
-        GameObject go;
-
-        for (int i = 0; i < 20; i++)
+    private void RenderRoom(Room room)
+    {
+        foreach (TileObject tileObject in room.objects)
         {
-            for (int y = 0; y < 2; y++) {
-                go = SimplePool.Spawn(TileObjectPrefab, new Vector3(2*i, 3+2*y, 0), Quaternion.identity);
-                go.GetComponent<TileObject>().tileType = TileTypeRegistry.GetTileType("core.tree");
+            if (tileObject != null)
+            {
+                spriteController.AddTileObject(tileObject);
             }
         }
-	}
+    }
+
+    private void DerenderRoom(Room room)
+    {
+
+    }
 	
 }

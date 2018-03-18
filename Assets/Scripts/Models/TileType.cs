@@ -1,22 +1,21 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class TileType {
 
     public readonly Bounds2D clippingZone;
     public readonly Bounds2D collisionZone;
     public readonly Bounds2D spriteZone;
-    public readonly Bounds2D interactionZone;
-    public readonly Bounds2D blockingZone;
     public readonly Sprite sprite;
+    public readonly Type tileEntityType;
 
 
-    public TileType(Sprite sprite, Bounds2D clippingZone, Bounds2D collisionZone, Bounds2D interactionZone, Bounds2D blockingZone)
+    public TileType(Sprite sprite, Bounds2D clippingZone = null, Bounds2D collisionZone = null, Type tileEntityType = null)
     {
         this.sprite = sprite;
         this.clippingZone = clippingZone;
         this.collisionZone = collisionZone;
-        this.interactionZone = interactionZone;
-        this.blockingZone = blockingZone;
+        this.tileEntityType = tileEntityType;
         this.spriteZone = new Bounds2D(new Vector2(0, 0), new Vector2(sprite.bounds.max.x, sprite.bounds.max.y));
     }
 

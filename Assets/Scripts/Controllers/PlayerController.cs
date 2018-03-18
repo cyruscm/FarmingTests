@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D collider;
     private SpriteRenderer[] childSpriteRenderers;
+    public RoomManager roomManager;
 
     private void Start()
     {
@@ -27,6 +28,18 @@ public class PlayerController : MonoBehaviour {
     void Update () {
         Move();
         CheckUnderTile();
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            int posX = Mathf.FloorToInt(cameraRay.origin.x);
+            int posY = Mathf.FloorToInt(cameraRay.origin.y);
+            TileObject to = roomManager.currentRoom.GetTileAt(posX, posY);
+            if (to != null)
+            {
+                to.Destroy();
+            }
+        }
 	}
 
 
@@ -38,7 +51,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (hit.collider != null)
             {
-                hit.collider.GetComponentInParent<TileObject>().PlayerInClippingZone();
+                //hit.collider.GetComponentInParent<TileObject>().PlayerInClippingZone();
             }
         }
     }

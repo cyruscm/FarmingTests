@@ -1,16 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public class TileEntity {
 
-public class TileEntity : MonoBehaviour {
+    public TileObject tileObject;
 
 	// Use this for initialization
-	void Start () {
+	void OnCreate () {
 		
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
+	void UpdateRendererd () {
 		
 	}
+
+    void LateUpdateRendered()
+    {
+
+    }
+
+	void UpdateNotRendered() {
+		
+	}
+
+    void LateUpdateNotRendered()
+    {
+
+    }
+
+    void OnInteract()
+    {
+
+    }
+
+    void OnCollision()
+    {
+
+    }
+
+    void OnEnterZone()
+    {
+
+    }
 }

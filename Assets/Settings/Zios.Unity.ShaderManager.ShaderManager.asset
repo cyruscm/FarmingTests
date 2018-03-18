@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707a7a68415736f4f93930529b482e6f, type: 3}
+  m_Name: Zios.Unity.ShaderManager.ShaderManager
+  m_EditorClassIdentifier: 
+  shadingBlend: 0
+  alphaCutoff: 0.3
+  shadowType: 0
+  shadowMode: 0
+  shadowBlend: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.25}
+  shadowSteps: 3
+  lightmapType: 0
+  lightmapMode: 0
+  lightmapBlend: 0
+  lightmapColor: {r: 0, g: 0, b: 0, a: 0.25}
+  lightmapSteps: 3
+  fadeType: 0
+  fadeGrayscale: 0
+  fadeBlend: 4
+  cullDistance: 150
+  fadeSteps: 3
+  fadeStartDistance: 80
+  fadeEndDistance: 100
+  fadeStartColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeEndColor: {r: 0, g: 0, b: 0, a: 0}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd6696a0ba36f142ac5f1916b8ca6ab, type: 3}
+  m_Name: Zios.Attributes.AttributeManager
+  m_EditorClassIdentifier: 
+  disabled: 0
+  editorRefreshPasses: -1
+  editorIncludeDisabled: 1
+  refreshOnComponentsChanged: 1
+  safeMode: 1
